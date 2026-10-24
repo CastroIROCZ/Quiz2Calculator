@@ -31,8 +31,8 @@ public class CalculatorTest {
 
   @Test
   public void multiply() {
-    int expected = 1;
-    int actual = calculator.multiply(1, 1);
+    int expected = -1;
+    int actual = calculator.multiply(1, -1);
     assertEquals(expected, actual);
   }
 
@@ -40,6 +40,20 @@ public class CalculatorTest {
   public void multiply2() {
     int expected = 0;
     int actual = calculator.multiply(100,0);
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void divide1() {
+    int expected = 1;
+    int actual = calculator.divide(100,100);
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void divide2() {
+    int expected = 0;
+    int actual = calculator.divide(0, 2000);
     assertEquals(expected, actual);
   }
 
