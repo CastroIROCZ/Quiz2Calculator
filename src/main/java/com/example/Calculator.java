@@ -1,7 +1,29 @@
 package com.example;
 
 public class Calculator {
-  public static void main(String[] args) {
-    System.out.println("Hello World!");
+
+  public int sum(int x, int y) {
+    return x + y;
+
   }
+
+  public int subtract(int x, int y) {
+    return 0;
+
+  }
+
+  public int multiply(int x, int y) {
+    return 0;
+
+  }
+
+  public int divide(int x, int y) {
+    return 0;
+
+  }
+
+  public boolean isEven(int i) {
+    return false;
+  }
+
 }
