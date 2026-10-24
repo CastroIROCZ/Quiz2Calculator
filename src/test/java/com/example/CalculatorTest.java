@@ -30,31 +30,42 @@ public class CalculatorTest {
   }
 
   @Test
-  public void multiply() {
+  public void testmultiply() {
     int expected = -1;
     int actual = calculator.multiply(1, -1);
     assertEquals(expected, actual);
   }
 
   @Test
-  public void multiply2() {
+  public void testmultiply2() {
     int expected = 0;
     int actual = calculator.multiply(100,0);
     assertEquals(expected, actual);
   }
 
   @Test
-  public void divide1() {
+  public void testdivide1() {
     int expected = 1;
     int actual = calculator.divide(100,100);
     assertEquals(expected, actual);
   }
 
   @Test
-  public void divide2() {
+  public void testdivide2() {
     int expected = 0;
     int actual = calculator.divide(0, 2000);
     assertEquals(expected, actual);
   }
 
+  @Test
+  public void testdivide3() {
+    assertThrows(ArithmeticException.class, () -> calculator.divide(10,0));
+  }
+
+  @Test
+  public void testisEven1() {
+    boolean expected = false;
+    boolean actual 
+  }
+  
 }
