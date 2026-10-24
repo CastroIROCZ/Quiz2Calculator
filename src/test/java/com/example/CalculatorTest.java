@@ -72,7 +72,7 @@ public class CalculatorTest {
   @Test
   public void testisEven2() {
     boolean expected = false;
-    boolean actual = calculator.isEven(2);
+    boolean actual = calculator.isEven(3);
     assertEquals(expected, actual);
   }
   
