@@ -68,5 +68,12 @@ public class CalculatorTest {
     boolean actual = calculator.isEven(4);
     assertEquals(expected, actual);
   }
+
+  @Test
+  public void testisEven2() {
+    boolean expected = false;
+    boolean actual = calculator.isEven(2);
+    assertEquals(expected, actual);
+  }
   
 }
