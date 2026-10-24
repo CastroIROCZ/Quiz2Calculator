@@ -16,9 +16,16 @@ public class CalculatorTest {
   }
 
   @Test
-  public void testSubtraction() {
+  public void testSubtract1() {
+    int expected = -10;
+    int actual = calculator.subtract(0, 10);
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void testSubtract2(){
     int expected = 2;
-    int actual = 1;
+    int actual = calculator.subtract(5, 3);
     assertEquals(expected, actual);
   }
 
