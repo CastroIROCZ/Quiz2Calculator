@@ -23,7 +23,12 @@ public class Calculator {
   }
 
   public boolean isEven(int i) {
-    return false;
+    if (i % 2 == 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 
 }
